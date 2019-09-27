@@ -1,0 +1,64 @@
+body {
+    background-color: lightgray;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 8px;
+}
+
+section:click {
+    border: dotted 10px lime;
+}
+
+.date {
+    border-bottom: dotted 3px #123abc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section:nth-of-type(3n) h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lime;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+h2 {
+    transition: 0.3s;
+}
+h2:hover {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+main {
+    width: 60%;
+    margin: auto
+}
+
+section:nth-of-type(2n) {
+    background-color: lightcyan;
+}
+
+section:nth-of-type(odd) {
+    border-radius:  25px;
+    opacity: .7;
+}
+
+section:first-child {
+    color: lightcoral;
+}
+
+section:last-of-type {
+    color: fuchsia;
+}
+
+small {
+    border: 2px dashed red;
+    float: right;
+    margin-top: -100px;
+    margin-right: 20%;
+}
