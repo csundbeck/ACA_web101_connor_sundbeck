@@ -70,3 +70,7 @@ p:hover::first-letter {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
+
+.articleUrl {
+    margin: 50px;
+}
