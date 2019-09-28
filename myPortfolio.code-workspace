@@ -1,13 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "C:\\Users\\ConnorS\\Documents\\GitHub\\Dev\\CorImport-Web-Tool"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "myPortfolio"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "ACA_web101_connor_sundbeck"
+    }
 }

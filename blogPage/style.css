@@ -24,10 +24,12 @@ section:nth-of-type(3n) h2 {
 
 section h2 {
     margin-top: 0;
+    color: plum;
 }
 
 h2 {
     transition: 0.3s;
+    color: peachpuff !important;
 }
 h2:hover {
     font-size: 25px;
@@ -61,4 +63,10 @@ small {
     float: right;
     margin-top: -100px;
     margin-right: 20%;
+}
+
+p:hover::first-letter {
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
