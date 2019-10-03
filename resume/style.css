@@ -1,0 +1,130 @@
+body {
+    background-color: ivory;
+    margin: 0px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1, h2, h3, li, a, p {
+    font-family: 'Volkhov', serif;
+}
+
+section {
+    padding-bottom: 3%;
+    margin: 0;
+}
+
+section h2, h1, a, h3 {
+    text-align: center;
+}
+
+.headSec {
+    width: 25%;
+    color: ivory;
+    background-color: #1289A7;
+    grid-column: 1/2;
+    width: 100%;
+    padding: 1%;
+    box-shadow: 5px 0px 5px #888888;
+    z-index: 99;
+    margin: -3%;
+}
+
+.experienceSec {
+    background-color: ivory;
+    grid-column: 2/2;
+    width: 100%;
+    margin: 0;
+}
+
+.experienceSec h2 {
+    margin-top: 80px;
+    font-size: 120%;
+}
+
+.jobExperience {
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 5% 0 0 12%;
+    width: 80%;
+}
+
+.jobExperience h3, p {
+    text-align: center;
+}
+
+.jobExperience h3 {
+    font-size: 100%;
+}
+
+hr {
+    color: ivory;
+    width: 100%;
+}
+
+.social {
+    padding-left: 20%;
+    color: ivory;
+    font-size: 30px;
+}
+
+li {
+    padding-bottom: 10px;
+    font-size: 80%;
+}
+
+.skillContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;    
+}
+.skillName {
+    grid-column: 1/2;
+    margin-left: 10%;
+}
+
+.skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: ivory;
+    grid-column: 2/2;
+}
+
+.totalSkill {
+    background-color: ivory;
+    margin-bottom: 2%;
+}
+
+.skills90 {
+    width: 90%;
+    background-color: #0652DD;
+}
+
+.skills80 {
+    width: 80%;
+    background-color: #0652DD;
+}
+
+.skills70 {
+    width: 70%;
+    background-color: #0652DD;
+}
+
+.skills60 {
+    width: 60%;
+    background-color: #0652DD;
+}
+
+.skills50 {
+    width: 50%;
+    background-color: #0652DD;
+}
