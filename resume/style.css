@@ -5,7 +5,7 @@ body {
 
 .gridContainer {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     padding: 10px;
     margin: 0;
 }
@@ -101,7 +101,9 @@ li {
 
 .totalSkill {
     background-color: ivory;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    margin-right: 20%;
+    text-align: right;
 }
 
 .skills90 {
