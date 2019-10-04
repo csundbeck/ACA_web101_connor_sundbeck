@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(#1D7D8E, #E9FBCE);
+    background-color: #E9FBCE;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -52,7 +53,7 @@ nav > a:hover {
   }
  
   #profile-pic {
-    width: 60%;
+    width: 400px;
     border-radius: 50%;
     margin: 4% auto;
     grid-column: 2/3;
@@ -63,6 +64,7 @@ nav > a:hover {
     grid-column: 2/3;
     margin: 3% auto;
     border-bottom: 2px solid #1D7D8E;
+    text-align: center;
   }
  
   h2 {
@@ -71,6 +73,7 @@ nav > a:hover {
     font-style: italic;
     font-weight: lighter;
     color: #1D7D8E;
+    text-align: center;
   }
  
   .small-text {
@@ -96,9 +99,40 @@ nav > a:hover {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
+    text-align: center;
+    text-align: center;
   }
 
   .btn-grow:hover {
       transition: 0.4s;
       transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+
+    button {
+      font-size: 16px;
+      text-align: center;
+      transform: scale(.8);
+    }
+
+    nav > a {
+      font-size: 12px;
+      padding-left: 3%;
+      padding-bottom: 2%;
+    }
+
+    h1 {
+      margin-top: 15%;
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    #profile-pic {
+      width: 200px;
+    }
   }

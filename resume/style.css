@@ -36,7 +36,7 @@ section h2, h1, a, h3 {
     padding: 1%;
     box-shadow: 5px 0px 5px #888888;
     z-index: 99;
-    margin: -3%;
+    margin: -10px;
 }
 
 .experienceSec {
@@ -47,14 +47,14 @@ section h2, h1, a, h3 {
 }
 
 .experienceSec h2 {
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 120%;
 }
 
 .jobExperience {
     border: solid black 1px;
     border-radius: 5px;
-    margin: 5% 0 0 12%;
+    margin: 3% 0 0 12%;
     width: 80%;
 }
 
@@ -66,20 +66,32 @@ section h2, h1, a, h3 {
     font-size: 100%;
 }
 
+.jobExperience li {
+    margin-right: 1%;
+}
+
 hr {
     color: ivory;
     width: 100%;
+    filter: opacity(50%);
 }
 
 .social {
-    padding-left: 20%;
+    padding: 2% 13% 2%;
     color: ivory;
     font-size: 30px;
+    transition: 0.4s;
+    display: inline-block
+}
+
+.social:hover {
+    transition: 0.4s;
+    transform: scale(1.25);
 }
 
 li {
     padding-bottom: 10px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .skillContainer {
@@ -130,3 +142,16 @@ li {
     width: 50%;
     background-color: #0652DD;
 }
+
+@media (max-width: 768px) {
+    .gridContainer {
+        display: block;
+        margin: 0;
+    }
+
+    .headSec {
+        padding-left: 2%;
+        padding-right: 2%;
+        box-shadow: 0px 0px;
+    }
+  }
