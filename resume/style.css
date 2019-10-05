@@ -1,6 +1,6 @@
 body {
     background-color: ivory;
-    margin: 0px;
+    margin: 0;
 }
 
 .gridContainer {
@@ -76,12 +76,29 @@ hr {
     filter: opacity(50%);
 }
 
+.socialGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 15%;
+}
+
 .social {
-    padding: 2% 13% 2%;
     color: ivory;
-    font-size: 30px;
+    font-size: 40px;
     transition: 0.4s;
-    display: inline-block
+}
+
+.social:nth-of-type(1) {
+    grid-column-start: 1;
+}
+
+.social:nth-of-type(2) {
+    grid-column-start: 2;
+}
+
+.social:nth-of-type(3) {
+    grid-column-start: 3;
 }
 
 .social:hover {
@@ -113,8 +130,8 @@ li {
 
 .totalSkill {
     background-color: ivory;
-    margin-bottom: 3%;
     margin-right: 20%;
+    margin-bottom: 5px;
     text-align: right;
 }
 
@@ -153,5 +170,11 @@ li {
         padding-left: 2%;
         padding-right: 2%;
         box-shadow: 0px 0px;
+        width: 100%;
+        margin-right: -5%;
+    }
+
+    .social {
+        font-size: 20px;
     }
   }
