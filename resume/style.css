@@ -80,7 +80,8 @@ hr {
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin-top: 15%;
+    grid-template-rows: auto;
+    margin-top: 10%;
 }
 
 .social {

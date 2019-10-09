@@ -1,0 +1,146 @@
+body {
+    background-image: url("img/casey-horner-9vf1uj6i6Ww-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+main {
+    display: grid;
+    background-color: rgb(255, 255, 255, .25);
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px lightgray solid;
+    border-radius: 15px;
+    align-self: center;
+    text-align: center;
+    padding: 5%;
+    grid-gap: 2%;
+    align-items: center;
+    grid-area: 2/2/3/3;
+    width: 100%;
+}
+
+h1, h2, h3, input, article, button {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+div {
+    background-color: #194A51;
+    padding: 3%;
+}
+
+.dashGreeting {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.dashGreeting input {
+    background: none;
+    width: 50%;
+    border: none;
+    border-bottom: 2px white solid;
+    color: white;
+    font-size: 20px;
+    padding: 2%;
+    transition: 0.4s;
+}
+
+.dashGreeting input:focus {
+    transform: scale(1.2);
+    border-bottom: 3px solid white;
+    transition: 0.4s;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.dashItem {
+    grid-row: 2/2;
+    height: 220px;
+}
+
+.calc {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.display {
+    grid-column: 1/5;
+    background-color: white;
+    padding: 3%;
+    border: 1px gray solid;
+    margin: 2% 5%;
+    color: black;
+    width: 95%;
+    display: flex;
+    justify-self: center;
+}
+
+.calc button {
+    background-color: #194A51;
+    font-size: 20px;
+}
+
+.timeDate article:nth-of-type(1) {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 300%;
+}
+
+.toDo input {
+    width: 80%;
+    color: black;
+    padding: 2%;
+}
+
+.toDo {
+    overflow: scroll;
+}
+
+ol {
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    h1, h2, h3, input, article, button {
+        transform: scale(0.8)
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .dashGreeting {
+        margin-bottom: 5%;
+        width: 100%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .dashItem {
+        width: 75%;
+        margin-bottom: 1%;
+    }
+
+    .calc {
+        grid-row: 2/3;
+    }
+
+    .timeDate {
+        grid-row: 3/4;
+    }
+
+    .toDo {
+        grid-row: 4/5;
+    }
+}
