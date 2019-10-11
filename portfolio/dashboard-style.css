@@ -12,7 +12,7 @@ main {
     display: grid;
     background-color: rgb(255, 255, 255, .25);
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px lightgray solid;
+    border: 1px rgba(#fff, .2) solid;
     border-radius: 15px;
     align-self: center;
     text-align: center;
@@ -23,6 +23,10 @@ main {
     width: 100%;
 }
 
+h1 {
+    font-size: 300%;
+}
+
 h1, h2, h3, input, article, button {
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -31,6 +35,10 @@ h1, h2, h3, input, article, button {
 div {
     background-color: #194A51;
     padding: 3%;
+}
+
+.dashItem:nth-of-type(3) > div {
+    display: flex;
 }
 
 .dashGreeting {
@@ -59,13 +67,21 @@ div {
 
 .dashItem {
     grid-row: 2/2;
-    height: 220px;
+    height: 17em;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .calc {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+.calcBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .display {
@@ -75,14 +91,30 @@ div {
     border: 1px gray solid;
     margin: 2% 5%;
     color: black;
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-self: center;
 }
 
 .calc button {
+    width: 3em;
+}
+
+.calc input {
+    align-self: center;
+}
+
+button {
     background-color: #194A51;
     font-size: 20px;
+    border: 1px white solid;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: white;
+    color: #194A51;
 }
 
 .timeDate article:nth-of-type(1) {
@@ -90,22 +122,27 @@ div {
     font-size: 300%;
 }
 
-.toDo input {
-    width: 80%;
-    color: black;
-    padding: 2%;
-}
-
 .toDo {
     overflow: scroll;
 }
 
+#addToDo {
+    padding: 2% 6%;
+    margin-left: 2%;
+}
+
+.toDo input {
+    width: 70%;
+    color: black;
+    padding: 2%;}
+
 ol {
     color: white;
     text-align: left;
+    font-family: 'Oswald', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     body {
         display: flex;
     }
@@ -136,11 +173,28 @@ ol {
         grid-row: 2/3;
     }
 
+    .calcBtns {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .calc button{
+        transform: scale(1.2);
+        margin: auto;
+        width: 100%;
+    }
+
     .timeDate {
         grid-row: 3/4;
     }
 
     .toDo {
         grid-row: 4/5;
+    }
+
+    #addToDo {
+        margin-left: 1%;
     }
 }

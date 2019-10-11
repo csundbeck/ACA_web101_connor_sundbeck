@@ -18,22 +18,28 @@
         </div>
         <div class="dashItem calc">
             <input class="display" type="text" disabled>
-            <button>+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>/</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button>=</button>
-            <button>.</button>
+            <div class="calcBtns">
+                <button>AC</button>
+                <button>+/-</button>
+                <button>%</button>
+                <button>/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+                <button>0</button>
+                <button>.</button>
+                <button>DEL</button>
+                <button>=</button>
+            </div>
         </div>
         <div class="dashItem timeDate">
             <h2>Time & Date</h2>
@@ -42,7 +48,10 @@
         </div>
         <div class="dashItem toDo">
             <h2>To-Do</h2>
-            <input type="text">
+            <div>
+                <input type="text">
+                <button id="addToDo">+</button>
+            </div>
             <ol>
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
