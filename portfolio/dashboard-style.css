@@ -142,6 +142,10 @@ ol {
     font-family: 'Oswald', sans-serif;
 }
 
+a {
+    color: #fff;
+}
+
 @media (max-width: 1000px) {
     body {
         display: flex;

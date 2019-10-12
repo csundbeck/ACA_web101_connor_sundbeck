@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+.headSection {
+    background-image: url("img/space.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+}
+
+h1 {
+    z-index: 99;
+    color: white;
+    font-size: 500%;
+    text-align: center;
+}
+
+.contactSection {
+    display: flex;
+    height: 324px;
+}
+
+.contactSection h3 {
+    text-align: center;
+}
+
+.contactSection div {
+    background-color: #E6E6E6;
+    width: 100%;
+}
+
+.contactSection div form, article, ol {
+    display: flex;
+    justify-content: ;
+}
+
+.contactSection div form {
+    align-content: flex-start;
+}
+
+.contactSection div:nth-of-type(1), div:nth-of-type(2) {
+    line-height: 25px;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 3%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form button {
+    margin-top: 10px;
+    width: 30%;
+    background-color: #4D4D4D;
+    color: #fff;
+    border: none;
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+input {
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+}
+
+a {
+    color: black;
+}
