@@ -1,8 +1,12 @@
 html, body {
+    width: 850px;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Ramabhadra', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .headSection {
@@ -39,7 +43,7 @@ h1 {
 
 .contactSection div form, article, ol {
     display: flex;
-    justify-content: ;
+    justify-content: center;
 }
 
 .contactSection div form {
