@@ -10,7 +10,7 @@ html, body {
 }
 
 .headSection {
-    background-image: url("img/space.jpg");
+    background-image: url("../img/space.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
