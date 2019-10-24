@@ -18,11 +18,39 @@
               </nav>
           </header>
           <main>
+            <div class="main1">
               <img src="images/crs_headshot.JPG" id="profile-pic" class="img-grow" alt="Head shot of Me"> 
               <h1>Connor Sundbeck</h1>
               <h2>Web Development Student</h2>
-              <button id="portfolio" class="btn-grow" onclick="window.location.href = 'portfolio/src/portfolio.html';">Portfolio</button>               
-              <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+              <button id="portfolio" class="btn-grow" onclick="window.location.href = 'portfolio/src/portfolio.html';">Portfolio</button>
+            </div>
+            <hr>
+            <div class="main2">
+              <div class="video-content">
+                  <h3>My Videos</h3>
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/640CjIUgKy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video width="200" height="450" controls src="videos/jb.MOV"></video>
+              </div>
+              <div>
+                <h3>Connect with Me</h3>
+                <form action="" method="post">
+                  <input type="text" id="name" placeholder="Name">
+                  <input type="email" id="email" placeholder="Email">
+                  <select id="location">
+                    <option value="" selected disabled hidden>Select a Location...</option>
+                    <option value="USA">USA</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Canada">Canada</option>
+                  </select>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Please include a Message"></textarea>
+                  <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div> <br>
+            <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
           </main>
       </body>
   </html>
