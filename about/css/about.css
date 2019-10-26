@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-h1, h2 {
+h1, strong {
     font-family: 'Russo One', sans-serif;
     color: #E9FBCE;
 }
@@ -17,12 +17,27 @@ p {
     font-family: 'Russo One', sans-serif;
 }
 
+cite {
+    text-align: center;
+    font-size: 20px;
+}
+
+.quote {
+    margin: 5% auto;
+    width: 40%;
+}
+
 header {
     text-align: center;
     box-shadow: 0px 1px 10px #E9FBCE;
     margin: 0 0 5% 0;
-    width: 100%;
-    padding: 2%;
+    width: auto;
+    padding: 2% 0 2% 0;
+}
+
+em {
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 section {
@@ -111,7 +126,7 @@ hr {
     box-shadow: 0px 1px 10px #E9FBCE;
     background-color: #1D7D8E;
     filter: blur(1px);
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 0;
 }
 
