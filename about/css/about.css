@@ -35,6 +35,31 @@ header {
     padding: 2% 0 2% 0;
 }
 
+nav > a {
+    width: 15%;
+    color:#E9FBCE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 20px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+nav > a:hover {
+transition: 0.4s;
+transform: scale(1.2);
+}
+
+nav {
+display: inline-flex;
+justify-content: center;
+width: 100%;
+}
+
 em {
     margin-top: 1%;
     margin-bottom: 5%;
