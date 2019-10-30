@@ -26,6 +26,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: auto;
+  align-content: center;
+  justify-content: center;
   }
 
 .main1 {
@@ -115,11 +117,6 @@ nav > a {
   text-decoration: none;
 }
 
-nav > a:hover {
-  transition: 0.4s;
-  transform: scale(1.2);
-}
-
 nav {
   display: inline-flex;
   justify-content: center;
@@ -132,6 +129,45 @@ nav {
   margin: 4% auto;
   grid-column: 2/3;
   }
+
+@keyframes fadeOut {
+  0% {
+    margin-right: 50%;
+    opacity: .8;
+  }
+  
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    margin-right: 0;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  };
+}
+
+.mustache {
+  position: relative;
+  width: 100px;
+  z-index: 99;
+  align-self: center;
+  top: 14em;
+  margin-left: 1%;
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  opacity: 0
+}
+
+.img-grow {
+  position: relative;
+}
 
 h1 {
   color: #1D7D8E;
@@ -235,5 +271,14 @@ button {
     border-top: 1px solid rgba(29, 125, 142, 0.4);
     border-block-start-width: 100%;
     border-block-end-width: 100%;
+  }
+
+  .mustache {
+    position: relative;
+    width: 50px;
+    z-index: 99;
+    align-self: center;
+    top: 7.1em;
+    margin-right: 5.5%;
   }
 }

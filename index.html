@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/animate.css-master/animate.css-master/animate.css">
       <link rel="stylesheet" href="css/style.css">
       <title>Connor Sundbeck Portfolio</title>
     </head>
@@ -11,28 +12,29 @@
           <header>
               <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
               <nav>
-                  <a class="has-border" href="resume/resume.html">Resume</a>
-                  <a class="has-border" href="about/about.html">About Me</a>
-                  <a class="has-border" href="blogPage/blog.html">My Blog</a>
-                  <a class="has-border" href="contact/contact.html">Contact Me</a>
+                  <a class="animated infinite swing" href="resume/resume.html">Resume</a>
+                  <a class="animated infinite swing" href="about/about.html">About Me</a>
+                  <a class="animated infinite swing" href="blogPage/blog.html">My Blog</a>
+                  <a class="animated infinite swing" href="contact/contact.html">Contact Me</a>
               </nav>
           </header>
           <main>
+            <img class="mustache" src="images/mustache-royalty.jpg" alt="">
             <div class="main1">
-              <img src="images/crs_headshot.JPG" id="profile-pic" class="img-grow" alt="Head shot of Me"> 
-              <h1>Connor Sundbeck</h1>
-              <h2>Web Development Student</h2>
-              <button id="portfolio" class="btn-grow" onclick="window.location.href = 'portfolio/src/portfolio.html';">Portfolio</button>
+              <img src="images/crs_headshot.JPG" id="profile-pic" class="img-grow" alt="Head shot of Me">
+              <h1 class="animated slideInRight">Connor Sundbeck</h1>
+              <h2 class="animated slideInLeft">Web Development Student</h2>
+              <button id="portfolio" class="btn-grow animated heartBeat infinite slower" onclick="window.location.href = 'portfolio/src/portfolio.html';">Portfolio</button>
             </div>
             <hr>
             <div class="main2">
               <div class="video-content">
-                  <h3>My Videos</h3>
+                <h3 class="animated rotateIn">My Videos</h3>
                 <iframe width="560" height="450" src="https://www.youtube.com/embed/640CjIUgKy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <video width="200" height="450" controls src="videos/jb.MOV"></video>
               </div>
               <div>
-                <h3>Connect with Me</h3>
+                <h3 class="animated rotateIn">Connect with Me</h3>
                 <form action="" method="post">
                   <input type="text" id="name" placeholder="Name">
                   <input type="email" id="email" placeholder="Email">
