@@ -159,10 +159,10 @@ nav {
   z-index: 99;
   align-self: center;
   top: 14em;
-  margin-left: 1%;
+  margin-left: 0.8%;
   animation-name: fadeOut;
   animation-duration: 2s;
-  opacity: 0
+  opacity: 0;
 }
 
 .img-grow {
@@ -278,7 +278,32 @@ button {
     width: 50px;
     z-index: 99;
     align-self: center;
+    justify-self: center;
     top: 7.1em;
     margin-right: 5.5%;
+    margin-left: 0;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      margin-right: 75%;
+      opacity: .8;
+    }
+    
+    20% {
+      opacity: 1;
+    }
+  
+    50% {
+      margin-right: 5.5%;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    };
   }
 }
