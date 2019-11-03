@@ -1,0 +1,41 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60px;
+    margin: auto;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    margin: auto auto 10px auto;
+    border: 2px solid cornflowerblue;
+    transition: 1s;
+}
+
+.square:nth-of-type(even):hover {
+    background-color: mediumaquamarine;
+}
+
+.square:nth-of-type(odd):hover {
+    background-color: plum;
+}
+
+.container:hover .square:nth-child(even) {
+    transform: scale(2) rotate(45deg) translateX(50px);
+    transition: 1s;
+}
+
+.container:hover .square:nth-child(odd) {
+    transform: scale(0.5) rotate(-45deg) translateX(-50px);
+    transition: 1s;
+}

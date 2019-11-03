@@ -99,8 +99,11 @@ input, select{
 
 hr {
   width: 100%;
-  opacity: .5;
   color: #1D7D8E;
+  background-color: #1D7D8E;
+  filter: blur(2px);
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 nav > a {
@@ -133,7 +136,7 @@ nav {
 @keyframes fadeOut {
   0% {
     margin-right: 50%;
-    opacity: .8;
+    opacity: .5;
   }
   
   20% {
@@ -287,7 +290,6 @@ button {
   @keyframes fadeOut {
     0% {
       margin-right: 75%;
-      opacity: .8;
     }
     
     20% {
