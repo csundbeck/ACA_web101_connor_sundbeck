@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="ticTacToe-style.css">
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+        <h1>Tic-Tac-Toe</h1>
+        <strong id="turn-key">Your Turn: X</strong>
+        <div id="gameBoard">
+            <div class="playSpace" id="square1" onclick="placeGameMarker('square1');"></div>
+            <div class="playSpace" id="square2" onclick="placeGameMarker('square2');"></div>
+            <div class="playSpace" id="square3" onclick="placeGameMarker('square3');"></div>
+            <div class="playSpace" id="square4" onclick="placeGameMarker('square4');"></div>
+            <div class="playSpace" id="square5" onclick="placeGameMarker('square5');"></div>
+            <div class="playSpace" id="square6" onclick="placeGameMarker('square6');"></div>
+            <div class="playSpace" id="square7" onclick="placeGameMarker('square7');"></div>
+            <div class="playSpace" id="square8" onclick="placeGameMarker('square8');"></div>
+            <div class="playSpace" id="square9" onclick="placeGameMarker('square9');"></div>
+        </div>
+        <div id="controlsContainer">
+            <button id="x-button" onclick="changeMarkerX();">X</button>
+            <!-- <button onclick="resetGameBoard();">Reset</button> -->
+            <button id="o-button" onclick="changeMarkerO();">O</button>
+        </div>
+    </body>
+    <script src="../js/ticTacToe.js"></script>
+</html>
