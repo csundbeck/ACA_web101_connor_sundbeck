@@ -48,10 +48,10 @@
         </div>
         <div class="dashItem toDo">
             <h2>To-Do</h2>
-            <div>
-                <input type="text">
-                <button id="addToDo">+</button>
-            </div>
+            <form id="newItemForm">
+                <input type="text" id="itemField">
+                <input type="submit" id="addToDo" value="+">
+            </form>
             <ol>
                 <li><a href="nasa.html">NASA Page</a></li>
                 <li><a href="../../transitions.html">Transition Animation</a></li>
@@ -61,4 +61,6 @@
         </div>
     </main>
 </body>
+<script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+<script src="../../js/dashboard.js"></script>
 </html>

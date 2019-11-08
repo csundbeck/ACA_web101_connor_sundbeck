@@ -100,21 +100,24 @@ div {
 
 .calc button {
     width: 4em;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .calc input {
     align-self: center;
 }
 
-button {
+input[type=submit] {
     background-color: #194A51;
     font-size: 20x;
     border: 1px white solid;
     display: inline-block;
     font-weight: bold;
+    color: white;
 }
 
-button:active {
+input[type=submit]:active {
     background-color: white;
     color: #194A51;
 }
@@ -133,10 +136,11 @@ button:active {
     margin-left: 2%;
 }
 
-.toDo input {
+.toDo input[type=text] {
     width: 70%;
     color: black;
-    padding: 2%;}
+    padding: 2%;
+}
 
 ol {
     color: white;
