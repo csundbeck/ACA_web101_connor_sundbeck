@@ -27,9 +27,26 @@ h1 {
     font-size: 300%;
 }
 
-h1, h2, h3, input, article, button {
+h1, h2, h3, input, article, button, p {
     font-family: 'Oswald', sans-serif;
     color: white;
+}
+
+.timeDate button {
+    margin-top: 5px;
+    background: transparent;
+    border: solid white 2px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#my-coordinates {
+    width: 100%;
+    margin-top: 0;
 }
 
 div {
@@ -67,7 +84,7 @@ div {
 
 .dashItem {
     grid-row: 2/2;
-    height: 17em;
+    height: 18em;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
 }
