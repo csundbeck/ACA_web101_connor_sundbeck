@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/hanoi.css">
+    <title>Towers of Hanoi</title>
+</head>
+<body>
+    <main>
+        <div class="tower" id="tower1" onclick="placeRing('tower1', 1);">
+            <div class="ring small" id="pinkRing" onclick="selectRing(0);"></div>
+            <div class="ring med" id="greenRing" onclick="selectRing(1);"></div>
+            <div class="ring big" id="orangeRing" onclick="selectRing(2);"></div>
+        </div>
+        <div class="tower" id="tower2" onclick="placeRing('tower2', 2);">
+        </div>
+        <div class="tower" id="tower3" onclick="placeRing('tower3', 3);">
+        </div>
+    </main>
+</body>
+<script delay src="../js/hanoi.js"></script>
+</html>
