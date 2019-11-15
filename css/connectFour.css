@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightyellow;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    border-width: 40px 80px;
+    border-style: solid;
+    border-color: lightyellow;
+    justify-content: center;
+    margin: auto;
+    align-content: center;
+    background-color: lightyellow;
+}
+
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(255, 255, 0, .5);
+    height: 400px;
+    width: 10%;
+    border: 5px rgba(255, 255, 0, .75) solid;
+}
+
+div {
+    height: 55px;
+    width: 40%;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.red {
+    background-color: red;
+    color: red;
+}
+
+.black {
+    background-color: black;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    justify-self: center;
+}
+
+article {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#turn {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.turn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.button-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#restartGame {
+    width: 35%;
+    padding: 1%;
+    margin: auto;
+    background-color: transparent;
+    border: 3px solid yellow;
+}
