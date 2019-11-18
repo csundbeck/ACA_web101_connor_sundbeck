@@ -26,11 +26,15 @@ section {
 }
 
 div {
-    height: 55px;
-    width: 40%;
-    border-radius: 50%;
     align-self: center;
     justify-self: center;
+    border-radius: 50%;
+}
+
+.red, .black {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
 }
 
 .red {
@@ -46,6 +50,10 @@ div {
 h1 {
     text-align: center;
     justify-self: center;
+}
+
+h1, article, button {
+    font-family: 'Courgette', cursive;
 }
 
 article {
@@ -82,5 +90,32 @@ article {
     padding: 1%;
     margin: auto;
     background-color: transparent;
-    border: 3px solid yellow;
+    border: 3px solid rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#restartGame:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    color: black;
+    border-color: black;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 20%;
+        height: 290px;
+    }
+
+    .red, .black {
+        height: 40px;
+        width: 40px;
+    }
+
+    button {
+        width: 50%;
+    }
 }
